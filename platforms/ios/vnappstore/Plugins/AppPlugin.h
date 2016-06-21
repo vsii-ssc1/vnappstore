@@ -6,8 +6,9 @@
 //
 //
 
-#import <Cordova/Cordova.h>
+#import <Cordova/CDVPlugin.h>
 
 @interface AppPlugin : CDVPlugin
-
+- (void) open:(CDVInvokedUrlCommand*)command;
+- (void) check:(CDVInvokedUrlCommand*)command;
 @end
