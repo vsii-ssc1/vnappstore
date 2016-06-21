@@ -2,6 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
   <dict>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+      <string>maas360</string>
+      <string>stel</string>
+      <string>ibmel</string>
+      <string>maas360browser</string>
+      <string>maas360browsers</string>
+      <string>hrms</string>
+      <string>vani</string>
+      <string>appstore</string>
+      <string>mbpp</string>
+    </array>
     <key>CFBundleDevelopmentRegion</key>
     <string>English</string>
     <key>CFBundleDisplayName</key>
@@ -29,9 +41,9 @@
     <key>LSRequiresIPhoneOS</key>
     <true/>
     <key>NSMainNibFile</key>
-    <string/>
+    <string></string>
     <key>NSMainNibFile~ipad</key>
-    <string/>
+    <string></string>
     <key>UIRequiresFullScreen</key>
     <true/>
     <key>NSAppTransportSecurity</key>
