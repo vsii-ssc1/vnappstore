@@ -3,11 +3,9 @@
         <div style="" id="updates-list-item-container3" class="item item-body ">
             <p class=" " style="margin-top:0px;color:#000000;" id="updates-markdown3">Update All</p>
             <ion-list class=" " id="updates-list4">
-                <ion-item style="" id="updates-list-item15" class="item-thumbnail-left  ">
-                    <h2>Item</h2>
-                </ion-item>
-                <ion-item style="" id="updates-list-item16" class="item-thumbnail-left  ">
-                    <h2>Item</h2>
+                <ion-item ng-repeat="app in apps">
+                    <div class="item-name">{{app.name}}</div>
+                	 <button-custom class="button-custom" scheme="app.scheme" label="Open" disabl="true"></button-custom>
                 </ion-item>
             </ion-list>
         </div>

@@ -17,7 +17,9 @@ define({
 			              'services/Service2' ],
 			'provider'  : [ ],
 			'directive' : [ 'directives/w3Hello', 
-			                'directives/w3TestDirective' ],
+			                'directives/w3TestDirective',
+			                'directives/buttonCustom'
+			                ],
 			'filter'    : [ 'filters/myFormat' ],
 			'config'    : [ 'conf/routes' ],
 			'run'       : [ 'conf/init' ]

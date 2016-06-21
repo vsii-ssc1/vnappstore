@@ -1,0 +1,10 @@
+.item-name {
+	float: left;
+	width: 80%;
+	position: relative;
+}
+.button-custom{
+	float: right;
+	width: 20%;
+	position: relative;	
+}

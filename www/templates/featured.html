@@ -1,41 +1,24 @@
 <ion-view style="" class=" " id="page2" title="Featured" cache-view="false">
     <ion-content class="has-header" padding="true">
-    <div>Timer: {{timer}}</div>
-    <button data-ng-click="goSettings()">Settings</button>
+    <!-- <div>Timer: {{timer}}</div> -->
+    <!-- <button data-ng-click="goSettings()">Settings</button> -->
     
         <div style="" id="featured-list-item-container1" class="item item-body ">
             <p class=" " style="margin-top:0px;color:#000000;" id="featured-markdown1">Latest Apps</p>
             <ion-list class=" " id="featured-list2">
-                <ion-item style="" id="featured-list-item4" class="item-thumbnail-left  ">
-                    <h2>Item</h2>
-                </ion-item>
-                <ion-item style="" id="featured-list-item6" class="item-thumbnail-left  ">
-                    <h2>Item</h2>
-                </ion-item>
-                <ion-item style="" id="featured-list-item8" class="item-thumbnail-left  ">
-                    <h2>Item</h2>
-                </ion-item>
-                <ion-item style="" id="featured-list-item14" class="item-thumbnail-left  ">
-                    <h2>Item</h2>
+                <ion-item ng-repeat="app in featureApps">
+                    <div class="item-name">{{app.name}}</div>
+                	 <button-custom class="button-custom" scheme="app.scheme" label="Open" disabl="true"></button-custom>
                 </ion-item>
             </ion-list>
         </div>
         <div style="" id="featured-list-item-container2" class="item item-body ">
             <p class=" " style="margin-top:0px;color:#000000;" id="featured-markdown2">Most Downloads</p>
             <ion-list class=" " id="featured-list3">
-                <ion-item style="" id="featured-list-item10" class="item-thumbnail-left  ">
-                    <h2>Item</h2>
-                </ion-item>
-                <ion-item style="" id="featured-list-item11" class="item-thumbnail-left  ">
-                    <h2>Item</h2>
-                </ion-item>
-                <ion-item style="" id="featured-list-item12" class="item-thumbnail-left  ">
-                    <h2>Item</h2>
-                </ion-item>
-                <ion-item style="" id="featured-list-item13" class="item-thumbnail-left  ">
-                    <h2>Item</h2>
-                </ion-item>
-            </ion-list>
+                <ion-item ng-repeat="app in mostDowdloadApps">
+                    <div class="item-name">{{app.name}}</div>
+                	 <button-custom class="button-custom" scheme="app.scheme" label="Open" disabl="true"></button-custom>
+                </ion-item>            </ion-list>
         </div>
     </ion-content>
 </ion-view>

@@ -5,17 +5,9 @@
                 <strong>markdown</strong>
             </p>
             <ion-list class=" " id="apps-list5">
-                <ion-item style="" id="apps-list-item17" class="item-thumbnail-left  ">
-                    <h2>Item</h2>
-                </ion-item>
-                <ion-item style="" id="apps-list-item18" class="item-thumbnail-left  ">
-                    <h2>Item</h2>
-                </ion-item>
-                <ion-item style="" id="apps-list-item19" class="item-thumbnail-left  ">
-                    <h2>Item</h2>
-                </ion-item>
-                <ion-item style="" id="apps-list-item20" class="item-thumbnail-left  ">
-                    <h2>Item</h2>
+                <ion-item ng-repeat="app in apps">
+                    <div class="item-name">{{app.name}}</div>
+                	 <button-custom class="button-custom" scheme="app.scheme" label="Open" disable="true"></button-custom>
                 </ion-item>
             </ion-list>
         </div>
