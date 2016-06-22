@@ -3,12 +3,12 @@ define(function($http){
 	return function(){
 		console.log('ClientConnector');
 		return {
-			rootPath: 'http://192.168.100.144:3000/vnapps',
+			rootPath: 'http:/vnappstore.mybluemix.net/vnas/api/v1/apps',
 			actions : {
 				featuredApps: '/featured',
 				latestApps: '/latest',
 				mostDownloadApps: '/most-download',
-				allApps: '/apps'
+				allApps: '/'
 			},
 			getFeaturedApps: function() {
 				var uri = this.actions.featuredApps;
