@@ -11,6 +11,10 @@
                         {
                             "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AppPlugin\"><param name=\"android-package\" value=\"com.ionicframework.starter.plugin.AppPlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }

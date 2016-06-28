@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:padding="5sp">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="235sp" android:layout_height="wrap_content" >
+		<ImageView android:id="@+id/download_icon"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<!-- Progress Bar -->
+		<ProgressBar style="?android:attr/progressBarStyleHorizontal"
+			android:minHeight="25dip" android:maxHeight="25dip"
+			android:id="@+id/progressbar_Horizontal" android:layout_width="205sp"
+			android:layout_height="wrap_content" android:paddingLeft="5sp"></ProgressBar>
+	</LinearLayout>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="0%"
+		android:textSize="14sp" android:textColor="#ffffff" android:id="@+id/percent" />
+</LinearLayout>

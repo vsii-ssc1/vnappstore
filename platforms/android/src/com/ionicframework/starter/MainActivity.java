@@ -19,8 +19,9 @@
 
 package com.ionicframework.starter;
 
+import org.apache.cordova.CordovaActivity;
+
 import android.os.Bundle;
-import org.apache.cordova.*;
 
 public class MainActivity extends CordovaActivity
 {
